@@ -1,5 +1,5 @@
 import express from "express";
-import { getAuthenticatedUser, login, logout, protect, signup } from "../../../techin/team1/back/controllers/authController.js";
+import { getAuthenticatedUser, login, logout, protect, signup } from "../controllers/authController.js";
 
 
 const usersRouter = express.Router();

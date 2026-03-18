@@ -1,7 +1,7 @@
 // const express = require("express");
 import express from "express";
 import cors from "cors"
-import toursRouter from "./routes/tourRoutes.js";
+import cookieParser from "cookie-parser";
 import usersRouter from "./routes/userRoutes.js";
 
 //create server
@@ -9,6 +9,7 @@ const app = express();
 
 //parses (converts to js object) incoming json data to req.body
 app.use(express.json());
+app.use(cookieParser());
 
 app.use(cors({
   origin: "http://localhost:5173",
